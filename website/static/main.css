@@ -1,0 +1,172 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #F7FBFB;
+  height: 20vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+.input,
+.button {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: normal;
+  border: none;
+  outline: none;
+  max-width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.fill-currentcolor {
+  fill: currentcolor; }
+
+.fill-none {
+  fill: none; }
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: .3s ease-out; }
+  @media (min-width: 768px) {
+    .icon {
+      width: 32px;
+      height: 32px; } }
+
+.button {
+  cursor: pointer;
+  color: #FD7F71;
+  transition: .3s ease-out; }
+  .button:hover, .button:focus {
+    transform: scale(1.125); }
+    .button:hover .icon, .button:focus .icon {
+      transform: scale(1.25); }
+
+.button-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 96px;
+  margin-left: 50px;
+  height: 96px;
+  border-radius: 48px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(187, 216, 216, 0.6), 0 3px 3px rgba(187, 216, 216, 0.4), 0 8px 16px rgba(187, 216, 216, 0.3); }
+  .button-open:hover, .button-open:focus {
+    box-shadow: 0 2px 2px rgba(187, 216, 216, 0.4), 0 4px 4px rgba(187, 216, 216, 0.3), 0 12px 32px rgba(187, 216, 216, 0.3); }
+
+.button-close {
+  position: absolute;
+  top: 7.5vw;
+  right: 7.5vw;
+  padding: 0;
+  background-color: transparent; }
+
+.button-search {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 25px 16px 21px; }
+  @media (min-width: 768px) {
+    .button-search {
+      padding: 30px 48px; } }
+
+.form-search {
+  position: relative;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .form-search {
+      max-width: 720px; } }
+
+.input-search {
+  padding: 26px 16px 25px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FD7F71;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(187, 216, 216, 0.6), 0 3px 3px rgba(187, 216, 216, 0.4), 0 8px 16px rgba(187, 216, 216, 0.3); }
+  @media (min-width: 768px) {
+    .input-search {
+      padding: 29px 48px;
+      font-size: 32px;
+      border-radius: 30em; } }
+
+.input-search::placeholder {
+  color: #C3D8D7; }
+
+.overlay {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #F7FBFB, #EAF5F5); }
+  @media (min-width: 768px) {
+    .overlay {
+      align-items: center;
+      align-content: center; } }
+
+.hiding {
+  max-height: 0;
+  opacity: 0;
+  bottom: 0;
+  transition: max-height 0.3s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.6s ease-out; }
+  .hiding .button-search,
+  .hiding .input-search {
+    opacity: 0; }
+  .hiding .button-search {
+    transform: translate3d(0, 33%, 0); }
+  .hiding .input-search {
+    transform: translate3d(0, 50%, 0); }
+
+.showing {
+  max-height: 50vh;
+  top: 0;
+  transition: max-height 0.4s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.8s ease-out; }
+
+.button-search {
+  transition: .4s .6s ease-out; }
+
+.input-search {
+  transition: .8s .3s ease-out; }
+
+.container{
+  margin-left: -165px;
+  margin-top: 340px;
+  color: #4a4a4a;
+  text-align: center;
+}
+.bold{
+  font-weight: 900;
+  font-size: 42px;
+}
+.bold-first{
+  font-weight: 900;
+  font-size: 28px;
+}
+.hanihuni{
+  font-size: 18px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */

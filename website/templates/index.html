@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>Weather app</title>
+</head>
+<body>
+    <!-- Toggle -->
+<a herf="#link-to-search" class="button button-open">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="icon">
+      <rect class="fill-none" width="32" height="32"/>
+      <path class="fill-currentcolor" d="M29.82861,24.17139,25.56519,19.908A13.0381,13.0381,0,1,0,19.908,25.56525l4.26343,4.26337a4.00026,4.00026,0,0,0,5.65723-5.65723ZM5,14a9,9,0,1,1,9,9A9.00984,9.00984,0,0,1,5,14Z"/>
+    </svg>
+  </a>
+  
+  <!-- Search form overlay -->
+  <div class="overlay hiding">
+    <button class="button button-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="icon">
+        <rect class="fill-none" width="32" height="32"/>
+        <path class="fill-currentcolor" d="M18.82813,16,29.41406,5.41406a1.99979,1.99979,0,0,0-2.82812-2.82812L16,13.17188,5.41406,2.58594A1.99979,1.99979,0,0,0,2.58594,5.41406L13.17188,16,2.58594,26.58594a1.99979,1.99979,0,1,0,2.82813,2.82813L16,18.82813,26.58594,29.41406a1.99979,1.99979,0,0,0,2.82813-2.82812Z"/>
+      </svg>
+    </button>
+    <form action="#" class="form-search">
+      <label for="keywords" class="visuallyhidden">Search</label>
+      <input class="input input-search" id="keywords" name="keywords" type="search" placeholder="Find something…" autocorrect="off" autocapitalize="off" required>
+      <button type="submit" class="button button-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="icon">
+          <rect class="fill-none" width="32" height="32"/>
+          <path class="fill-currentcolor" d="M29.82861,24.17139,25.56519,19.908A13.0381,13.0381,0,1,0,19.908,25.56525l4.26343,4.26337a4.00026,4.00026,0,0,0,5.65723-5.65723ZM5,14a9,9,0,1,1,9,9A9.00984,9.00984,0,0,1,5,14Z"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+  <div class="container">
+      <h1 class="bold">{{region}}</h1>
+      <h1 class="bold-first">Temperature {{temperature}} °C</h1>
+      <h1 class="hanihuni">Shimoliy uzunlik: {{shimoliy_uzunlik}}</h1>
+      <h1 class="hanihuni">Sharqiy kenglik: {{sharqiy_kenglik}}</h1>
+  </div>
+  <script src="{{url_for('static', filename='main.js')}}"></script>
+</body>
+</html>
